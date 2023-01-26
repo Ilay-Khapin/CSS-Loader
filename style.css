@@ -1,0 +1,57 @@
+.wrapper {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: pink;
+  animation: scaling 2.5s ease-in-out infinite;
+}
+
+@keyframes scaling {
+  0%,
+  100% {
+    transform: scale(0.2);
+    background-color: #339933;
+  }
+  40% {
+    transform: scale(1);
+    background-color: #ff9933;
+  }
+  50% {
+    transform: scale(1);
+    background-color: #9966cc;
+  }
+}
+
+.dot:nth-child(0) {
+  animation-delay: 0s;
+}
+
+.dot:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.dot:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.dot:nth-child(5) {
+  animation-delay: 1s;
+}
